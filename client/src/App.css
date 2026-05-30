@@ -923,13 +923,164 @@ a {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 1.8rem; }
-  .search-bar { flex-direction: column; }
-  .listing-detail-body { grid-template-columns: 1fr; }
-  .listing-detail-header { flex-direction: column; }
-  .form-row { grid-template-columns: 1fr; }
-  .navbar { padding: 1rem; }
-  .navbar-links { gap: 0.8rem; }
-  .listing-hero-image { height: 220px; }
+
+  /* Navbar */
+  .navbar {
+    padding: 0.8rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .navbar-brand { font-size: 1.2rem; }
+
+  .navbar-links {
+    gap: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .btn-logout {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .btn-register {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  /* Main content */
+  .main-content { padding: 1rem; }
+
+  /* Hero */
+  .hero {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero p { font-size: 0.95rem; }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .search-bar select,
+  .search-bar button {
+    width: 100%;
+    padding: 0.7rem;
+  }
+
+  /* Neighborhoods */
+  .neighborhood-grid { gap: 0.5rem; }
+
+  .neighborhood-chip {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  /* Listings grid */
+  .listings-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Browse */
+  .browse h1 { font-size: 1.4rem; }
+
+  .filters {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+
+  .filters select { width: 100%; }
+
+  /* Search area */
   .search-area-form { flex-direction: column; }
+
+  .search-area-input,
+  .search-area-form .btn-primary {
+    width: 100%;
+  }
+
+  /* Listing detail */
+  .listing-detail-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .listing-detail-price { text-align: left; }
+
+  .listing-detail-price span { font-size: 1.4rem; }
+
+  .listing-detail-body { grid-template-columns: 1fr; }
+
+  .listing-hero-image {
+    height: 220px;
+    border-radius: 10px;
+  }
+
+  .listing-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Auth */
+  .auth-card {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .auth-card h2 { font-size: 1.5rem; }
+
+  /* Dashboard */
+  .dashboard-header h1 { font-size: 1.4rem; }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .listing-card-actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Pagination */
+  .pagination { gap: 0.3rem; }
+
+  .btn-page {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  /* Inquiry form */
+  .inquiry-form { padding: 1rem; }
+}
+
+/* ===== EXTRA SMALL SCREENS ===== */
+@media (max-width: 400px) {
+  .navbar-links {
+    font-size: 0.78rem;
+    gap: 0.4rem;
+  }
+
+  .hero h1 { font-size: 1.3rem; }
+
+  .listing-detail-price span { font-size: 1.2rem; }
+
+  .btn-page { padding: 0.3rem 0.5rem; }
+
+  .auth-card { padding: 1.2rem; }
+
+  .dashboard-section { padding: 1rem; }
 }
